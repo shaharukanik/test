@@ -3,9 +3,9 @@ pipeline {
   stages {
     stage("Multiple") {
 	  steps {
-	    sh "mkdir /tmp/testdir"
-	    sh "cd /tmp/testdir"
-	    sh "touch file-99"
+	    sh "rmdir /tmp/testdir"
+	    sh "df -h"
+	    sh "free -h"
 	  }
     }
   }
