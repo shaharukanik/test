@@ -5,7 +5,7 @@ pipeline {
 	  steps {
 	    sh "mkdir /tmp/testdir"
 	    sh "cd /tmp/testdir"
-	    sh "touch file-1"
+	    sh "touch file-99"
 	  }
     }
   }
