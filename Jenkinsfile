@@ -1,7 +1,7 @@
 pipeline {
   agent { label "SlaveNode" }
   stages {
-    stage("Browser Test")
+    stage("Browser Test") {
 	  parallel {
 	    stage("Brave Test") {
 		  steps {
@@ -29,6 +29,7 @@ pipeline {
 		  }
 		}
 	  }
+	}
 	stage("Fly") {
 	  steps {
 	    echo "Fly"
