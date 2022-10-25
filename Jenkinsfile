@@ -1,9 +1,9 @@
 pipeline {
-agent { label "SlaveNode" }
+  agent { label "SlaveNode" }
   stages {
-    stage("Test") {
+    stage("Echo") {
 	  steps {
-	    sh "df -h"
+	    echo "This is a test"
 	  }
 	}
   }
