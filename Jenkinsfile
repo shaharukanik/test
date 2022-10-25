@@ -1,10 +1,12 @@
 pipeline {
   agent { label "SlaveNode" }
   stages {
-    stage("Create Directory") {
+    stage("Multiple") {
 	  steps {
-	    sh "rmdir /tmp/testdir"
-      }
-	}
+	    sh "mkdir /tmp/testdir"
+	    sh "cd /tmp/testdir"
+	    sh "touch file-1"
+	  }
+    }
   }
 }
