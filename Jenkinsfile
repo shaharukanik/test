@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage("Create Directory") {
 	  steps {
-	    sh "mkdir /tmp/testdir"
+	    sh "rmdir /tmp/testdir"
       }
 	}
   }
