@@ -10,17 +10,21 @@ pipeline {
 	  steps {
 	    echo "This is a test"
 	  }
-	  stage("Is") {
+	}
+	stage("Is") {
 	  steps {
 	    echo "This is a test"
 	  }
-	  stage("A") {
+	}
+	stage("A") {
 	  steps {
 	    echo "This is a test"
 	  }
-	  stage("Test") {
+	}
+	stage("Test") {
 	  steps {
 	    echo "This is a test"
 	  }
+	}
   }
 }
